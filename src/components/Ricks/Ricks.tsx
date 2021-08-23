@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import { RouteComponentProps } from 'react-router-dom';
 import { RickData, Location, baseUrl } from '../../util';
 import Episodes from '../Episodes/Episodes';
 import axios from 'axios';
@@ -46,7 +45,7 @@ const useStyles = makeStyles({
     margin: '20px',
   },
 });
-const Ricks: React.FC<RouteComponentProps> = () => {
+const Ricks: React.FC = () => {
   const classes = useStyles();
   const [residents, setResidents] = useState<number>(0);
   const [episodes, setEpisodes] = useState<any>([]);
