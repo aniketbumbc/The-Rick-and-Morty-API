@@ -1,46 +1,40 @@
-# Getting Started with Create React App
+# The-Rick-and-Morty-API Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+In this application user can able to view characters from rick and mortry api.
+- Name of character.
+- character information like. (Name and Species)
+- Origin and location name.
+- Dimension, amount of residents. (Modal popup)
+- Name of the episodes the character is featured on.(Grid view)
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- On an application load successfully user will able to see cards which contains character information,If in the case of error occurs then there will be alert as well as error message occur on UI.
+- After cards loads user can click on episodes to view episodes information and residents, dimension.
+- User can see episodes which character is featured on on click of episode button.
+- If user want residents count information then he/she can click on Residents button, in this case popup will be appear.
+- After successful episodes load on grid view, user can click on back button back to cards page.
 
-### `npm start`
+## Technology
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### Frontend
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- Frontend stack is **React-typescript,hooks and css,Material UI  to show a grid and modal.**
+- Implementation of application using two componets, **Ricks component** which show ricks character cardsand **Episodes Component** which contains episodes of grid.
+- **Loader** implementation is on episodes page, In case of network slow down or api dealy respones.
+- Application is fully responsive able to view on ipad mode as well as mobile view mode.
+- Runs the app in the development mode.
+- Open **http://localhost:3000** to view it in the browser.
 
-### `npm test`
+## Installation
+ **Need apisever run simultaneously**
+```sh
+clone repo
+cd rickandmonrty
+npm install
+npm start
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Preview
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+![Project](https://media.giphy.com/media/gLxri3dQAvonbdGHwS/giphy-downsized-large.gif?cid=790b7611de7f03d1dd9a0919178a8fc8c1c59ae7ce1eed85&rid=giphy-downsized-large.gif&ct=g)
