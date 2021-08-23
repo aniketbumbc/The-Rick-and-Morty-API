@@ -1,25 +1,21 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Ricks from './components/Ricks/Ricks';
+import Episodes from './components/Episodes/Episodes';
+import { Switch, Route, RouteComponentProps } from 'react-router-dom';
+
+interface RouterProps {
+  // type for `match.params`
+  rickId: string; // must be type `string` since value comes from the URL
+}
+
+export interface EpisodesDetailProps extends RouteComponentProps<RouterProps> {}
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Switch>
+      <Route exact path='/' render={(props) => <Ricks {...props} />}></Route>
+      <Route path='/episodes' component={Episodes}></Route>
+    </Switch>
   );
 }
 
