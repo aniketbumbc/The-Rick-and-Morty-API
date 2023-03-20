@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack://src/components/Episodes/Episodes.css"],"names":[],"mappings":"AAAA,QACE,YAAa,CACb,sBACF,CAEA,OACE,iBAAkB,CAClB,aACF","file":"main.fabe67fd.chunk.css","sourcesContent":[".loader {\n  display: flex;\n  justify-content: center;\n}\n\n.title {\n  text-align: center;\n  color: #1976d2;\n}\n"]}
